@@ -1,10 +1,10 @@
 #include "binary_trees.h"
-int max(const binary_tree_t *node);
 /**
  * binary_tree_height - measures the height of a tree
  * @tree: pointer to node root
  * Return:  measure the height.
  */
+
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	if (tree == NULL)
@@ -18,8 +18,8 @@ size_t binary_tree_height(const binary_tree_t *tree)
  */
 int max(const binary_tree_t *node)
 {
-	static int leftd = 0;
-	static int rightd = 0;
+	static int leftd;
+	static int rightd;
 
 	if (node == NULL)
 		return (0);
