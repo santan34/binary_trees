@@ -23,7 +23,7 @@ int max(const binary_tree_t *node)
 
 	if (node == NULL)
 		return (0);
-	if (node != NULL)
+	else
 	{
 		leftd = max(node->left);
 		rightd = max(node->right);
